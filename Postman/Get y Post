@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "76103e9b-fc70-4db2-a928-c78ca74cdcf6",
+		"name": "EjercicioClase",
+		"description": "Get y push\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/things",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/things",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/things",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "clase",
+							"value": "informatica",
+							"type": "text"
+						},
+						{
+							"key": "seccion",
+							"value": " 1203",
+							"type": "text"
+						},
+						{
+							"key": "cupos",
+							"value": "25",
+							"type": "text"
+						},
+						{
+							"key": "campus",
+							"value": "espiritu santo",
+							"type": "text"
+						},
+						{
+							"key": "docente",
+							"value": "mauricio",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/things",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things"
+					]
+				},
+				"description": "post correcto"
+			},
+			"response": []
+		}
+	]
+}

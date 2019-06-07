@@ -1,9 +1,10 @@
 const express = require('express');
 var router = express.Router();
+var uuid = require('uuid/v4');
 
 var thingsCollection = [];
 var datos = {
-    "id": 'uuid',
+    "id": 0,
     "clase": '',
     "seccion":'',
     "cupos": 0,
@@ -14,7 +15,7 @@ var datos = {
 
 
 thingsCollection.push(
-    Object.assign(datos,{"id":"1", "clase":"Matematicas","seccion":"0100","cupos":"30", "campus":"Sagrado corazon","docente":"Jose"})
+    Object.assign(datos,{"id":uuid(), "clase":"Matematicas","seccion":"0100","cupos":"30", "campus":"Sagrado corazon","docente":"Jose"})
 
 );
 
